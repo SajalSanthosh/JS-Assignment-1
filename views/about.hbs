@@ -1,0 +1,64 @@
+<section id="about">
+  <div class="about-container about-section section">
+    <div class="container">
+      <div class="row">
+        <article class="col-sm-6 about-article">
+          <h2 class="page-header">{{title}}</h2>
+          <p>
+            I am passionate Computer Programmer student with a experiance of
+            working in websites, desktop and Android apps.
+            I am good at C++, Java, PHP, C#, and Android.</p>
+          <p>
+            I enjoy most of my time coding or doing something creative
+          </p>
+          <p>
+            Feel free to browse through my projects.
+          </p>
+        </article>
+        <article class="col-sm-6">
+          <h2 class="page-header">Skills</h2>
+          <div class="barWrapper">
+            <span class="progressText"><B>C++</B></span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+
+            <span class="progressText"><B>Java</B></span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+
+            <span class="progressText"><B>C#</B></span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+
+            <span class="progressText"><B>PHP</B></span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+
+            <span class="progressText"><B>HTML5</B></span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+
+          </div>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(".progress-bar").each(function () {
+    each_bar_width = $(this).attr('aria-valuenow');
+    $(this).width(each_bar_width + '%');
+  });
+</script>
